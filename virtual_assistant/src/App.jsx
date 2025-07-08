@@ -8,7 +8,7 @@ import assistantImg from "./assets/sec.jpeg";
 const App = () => {
   const [content, setContent] = useState("Click here to talk to me");
   const recognitionRef = useRef(null);
-
+ 
   useEffect(() => {
     wishMe();
 
@@ -47,7 +47,7 @@ const App = () => {
   };
 
   const takeCommand = (msg) => {
-      if (msg.includes("hello") || msg.includes("hey")) {
+    if (msg.includes("hello") || msg.includes("hey")) {
     speak("Hello sir, what can I help you with?");
   } else if (msg.includes("who are you")) {
     speak("I am your virtual assistant, created by Saif Ali Nagori.");
@@ -157,7 +157,8 @@ const App = () => {
     const result = Math.floor(Math.random() * 6) + 1;
     speak("Rolling the dice: It's a " + result);
 
-  }
+  } 
+
   else {
     speak(`this is what i found on internet regarding ${msg.replace("shipra" , "") || msg.replace("shifra" , "")}`);
     window.open(`https://www.google.com/search?q=${msg.replace("shipra" , "") || msg.replace("shifra" , "")}`)

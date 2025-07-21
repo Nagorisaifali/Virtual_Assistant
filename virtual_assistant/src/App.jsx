@@ -6,11 +6,13 @@ import "./App.css";
 import assistantImg from "./assets/sec.jpeg";
 
 const App = () => {
+
   const [content, setContent] = useState("Click here to talk to me");
   const recognitionRef = useRef(null);
- 
+
+
   useEffect(() => {
-    wishMe();
+    wishMe();            
 
     const SpeechRecognition =
       window.SpeechRecognition || window.webkitSpeechRecognition;

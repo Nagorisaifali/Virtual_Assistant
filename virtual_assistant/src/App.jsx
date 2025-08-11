@@ -15,7 +15,7 @@ const App = () => {
     wishMe();            
 
     const SpeechRecognition =
-      window.SpeechRecognition || window.webkitSpeechRecognition;
+    window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
     recognitionRef.current = recognition;
 
@@ -28,7 +28,7 @@ const App = () => {
   }, []);
 
   const speak = (text) => {
-    let text_speak = new SpeechSynthesisUtterance(text);
+    let text_speak = new SpeechSynthesisUtterance(text); 
     text_speak.rate = 1;
     text_speak.pitch = 1;
     text_speak.volume = 1;

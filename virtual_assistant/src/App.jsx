@@ -81,7 +81,7 @@ const App = () => {
     speak("Opening LinkedIn");
     window.open("https://www.linkedin.com", "_blank");
   } else if (msg.includes("what is your name")) {
-    speak("My name is Shifra, your assistant");
+    speak("My name is Jiji, your assistant");
   } else if (msg.includes("open github")) {
     speak("Opening GitHub");
     window.open("https://github.com", "_blank");

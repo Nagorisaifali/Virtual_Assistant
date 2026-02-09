@@ -52,7 +52,7 @@ const App = () => {
     if (msg.includes("hello") || msg.includes("hey")) {
     speak("Hello sir, what can I help you with?");
   } else if (msg.includes("who are you")) {
-    speak("I am your virtual assistant, created by Saif Ali Nagori.");
+    speak("I am Jiji your virtual assistant, created by Saif Ali Nagori.");
   } else if (msg.includes("open youtube")) {
     speak("Opening YouTube");
     window.open("https://www.youtube.com", "_blank");
@@ -178,7 +178,7 @@ const App = () => {
       />
 
       <h1>
-        I'm <span className="pink">Shifra</span>, Your
+        I'm <span className="pink">Jiji</span>, Your
         <span className="blue"> Virtual Assistant</span>
       </h1>
 
